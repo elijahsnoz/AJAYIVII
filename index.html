@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAYI VII - Art Bank</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="AJAYI VII Logo" class="logo">
+            <h1>SECURE YOUR FINANCIAL FUTURE</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#artists">Artists</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>WELCOME TO AJAYI VII</h2>
+            <p>Discover, Explore, and Invest in Exquisite Art Pieces</p>
+            <a href="#collections" class="btn" id="browse-collections-btn">Browse Collections</a>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>AJAYI VII - Art Bank is a premier destination for art enthusiasts, collectors, and investors. We offer a diverse range of art pieces from renowned and emerging artists, ensuring that there is something for everyone.</p>
+        </div>
+    </section>
+
+    <section id="collections" class="content-section">
+        <div class="container">
+            <h2>Our Collections</h2>
+            <p>Explore our extensive collections, featuring contemporary and classic art pieces across various mediums.</p>
+            <div id="artwork-gallery" class="artwork-gallery"></div>
+            <a href="collections.html" class="btn center-btn">View Collections</a>
+        </div>
+    </section>
+
+    <section id="artists" class="content-section">
+        <div class="container">
+            <h2>Our Artists</h2>
+            <div id="artist-list">
+                <!-- Artist names will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us for more information about our collections and services.</p>
+            <a href="contact.html" class="btn center-btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="nft-token" class="content-section">
+        <div class="container">
+            <h2>NFT and TOKEN COIN</h2>
+            <div class="nft-token-info">
+                <img src="coin.jpeg" alt="Token Coin Logo" class="coin-logo">
+                <div class="market-info" id="market-info">
+                    <!-- Data from LiveCoinWatch API will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="artist-signup" class="content-section">
+        <div class="container">
+            <h2>Join Our Community</h2>
+            <p>If you're an artist looking to showcase your work with AJAYI VII, sign up and upload your artwork today!</p>
+            <a href="signup.html" class="btn center-btn">Sign Up</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AJAYI VII - Art Bank. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="script.js"></script>
+    <script src="livecoinwatch_integration.js"></script>
+    <script src="artwork.js"></script>
+</body>
+</html>

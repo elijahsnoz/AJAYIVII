@@ -1,0 +1,174 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: rgba(40, 42, 42, 0.8); /* Slightly transparent background */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    width: 150px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hero {
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.content-section {
+    padding: 50px 0;
+    text-align: center; /* Center-align section content */
+    color: #fff; /* White text for better readability */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #282a2a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn.center-btn {
+    margin: 0 auto; /* Center the buttons */
+    display: block;
+}
+
+/* Artwork Gallery Styles */
+.artwork-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.artwork-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Market Info Styles */
+.market-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #000; /* Black text for better readability */
+}
+
+.coin-info {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.currency-logo {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+
+.coin-info p {
+    margin: 5px 0;
+}
+
+.nft-token-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coin-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgba(40, 42, 42, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .logo {
+        width: 100px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #hero {
+        padding: 50px 0;
+    }
+
+    .content-section {
+        padding: 30px 0;
+    }
+
+    .artwork-gallery img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .coin-info {
+        width: 100%;
+    }
+}
